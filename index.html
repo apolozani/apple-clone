@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" id="Home">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <style>
+        html{
+            font-family: 'SF Pro Display', sans-serif;
+            background-color: white;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: black;
+            height: 40px;
+            overflow: hidden;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+        .logo img{
+            padding: 15px 15px;
+            fill: white;
+        }
+
+        .nav-bar ul{
+            display: flex;
+            padding-left: 0;
+            
+        }
+        .nav-bar ul li{
+            list-style-type: none;
+            padding: 10px;
+            font-size: 12.2px;
+            margin-left: 20px;
+            color: white;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            color: rgb(167, 167, 167);
+            transition: 0.5s;
+
+        }
+
+        li a:hover{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        .iphone-14{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .iphone-141{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FBFBFD;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            text-align: center;
+        }
+
+        .watch{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .iphone-14 h1, .iphone-141 h1 , .watch h1{
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .iphone-141 h1{
+            margin-top: 80px;
+        }
+
+        .iphone-14 p, .iphone-141 p, .watch p {
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .iphone-14 a,.iphone-141 a, .watch a {
+            font-size: 20px;
+            color: dodgerblue;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        .apple-watch-pic {
+            margin-top: 35px;
+        }
+
+        .ultra-fitnnes p{
+            font-size: 20px;
+        }
+
+        .ultra-fitnnes a{
+            font-size: 18px;
+            color: dodgerblue;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .ultra-fitnnes a:hover{
+            text-decoration:underline;
+        }
+
+        .ultra {
+            background-color: #FBFBFD ;
+            text-align: center;
+            margin: 15px;
+            margin-right: 7.5px;
+        }
+
+        .fitness{
+            text-align: center;
+            margin: 15px;
+            margin-left: 7.5px;
+            background-image: url(82935618_1015351858835796_6355507249911876416_n.webp);
+            background-size: 100%;
+        }
+
+        .ultra-fitnnes{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items:stretch;
+        }
+
+ 
+        .fitness a{
+            color: white;
+        }
+
+        .ultra-fitnnes a:hover{
+            text-decoration:underline;
+        }
+
+        .airpods-ipad{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .airpods{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 15px;
+            margin-right: 7.5px;
+        }
+        .airpods p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .airpods-ipad a{
+            font-size: 18px;
+            color: dodgerblue;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .airpods-ipad a:hover{
+            text-decoration: underline;
+        }
+
+        .ipad{
+            text-align: center;
+            color: black;
+            background-color:#FBFBFD;
+            margin: 15px;
+            margin-left: 7.5px;
+        }
+
+        .ipad p{
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            font-size: 12.5px;
+            color: rgb(88, 88, 88);
+            background-color: #F5F5F7;
+            padding: 70px;
+
+        }
+
+        .footer p{
+            margin-bottom: 1.5px;
+        }
+
+        .footer p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+
+        @media (max-width: 1018px) {
+       .header{
+        padding: 20px;
+       }
+
+       .logo{
+        position: relative;
+        bottom: 5px;
+        
+       }
+        }
+
+        @media (max-width: 977px){
+            .header{
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 600px){
+            .footer p{
+                margin-bottom: 15px;
+                width: 80%;
+            }
+            hr{
+                display: none;
+            }
+
+            .ultra-fitnnes {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0;
+            }
+            .fitness{
+                padding: 0;
+                margin: 0;
+                height: 500px;
+            }
+
+            .airpods-ipad {
+            display: grid;
+            grid-template-columns: 1fr;
+            }
+
+            .airpods{
+                margin: 0;
+                margin-top: 10px;
+            }
+            .ipad{
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#home"><img src="Apple_logo_white.svg.png" alt="logo" width="15px"></a>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href=>Store</a></li>
+                <li><a href=>Mac</a></li>
+                <li><a href=>iPad</a></li>
+                <li><a href=>iPhone</a></li>
+                <li><a href=>Watch</a></li>
+                <li><a href=>AirPods</a></li>
+                <li><a href=>TV & Home</a></li>
+                <li><a href=>Only on Apple</a></li>
+                <li><a href=>Accessories</a></li>
+                <li><a href=>Support</a></li>
+                <li><a href=>Search</a></li>
+                <li><a href=>Bag</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="iphone-14">
+        <div class="text">
+            <h1 style="font-family:'SF Pro Display', sans-serif;">iPhone 14 Pro</h1>
+            <p>Pro. Beyond.</p>
+            <a href="">Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img src="iphone14.png" alt="" width="60%">
+        </div>
+    </div>
+
+    <div class="iphone-141">
+        <div class="text">
+            <h1 style="font-family: 'SF Pro Display', sans-serif;">iPhone 14</h1>
+            <p>Big and Bigger.</p>
+            <a href="">Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img src="Capture.PNG" alt="" width="450px">
+        </div>
+    </div>
+
+    <div class="watch">
+        <div class="text">
+            
+            <h1 style="font-family: 'SF Pro Display', sans-serif;; font-weight:500;">
+                <img src="Apple_logo_white.svg.png" alt="logo" width="40px" >WATCH</h1>
+     
+            <p style="font-family: 'SF Pro Display', sans-serif; color: #CC2127; font-size: 20px; font-weight: 500;">SERIES 8</p>
+            <p>A healthy leap ahead.</p>
+            <a href="">Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img class="apple-watch-pic" src="apple-watch.png" alt="watch" width="550px">
+        </div>
+    </div>
+
+    <div class="ultra-fitnnes">
+        <div class="ultra">
+            <h1 style="font-family: 'SF Pro Display', sans-serif; font-weight: 500; margin-top: 30px; margin-bottom: 10px;">
+                <img src="Apple_Watch_official_logo.svg.png" alt="logo" width="150px" ></h1>
+     
+            <p style="font-family: 'SF Pro Display', sans-serif; color: #FD6A13; font-size: 16px; font-weight: 600; letter-spacing: 2px; margin-top: 5px;">ULTRA</p>
+            <p>Adventure waits.</p>
+            <a href="">Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img class="apple-watch-pic" src="Capture-2.PNG" alt="watch" width="100%">
+        </div>
+
+        <div class="fitness">
+            <h1 style="color: white; font-family:'SF Pro Display', sans-serif; font-weight: 500;font-size: 35px;">
+                <img src="Apple_logo_white.svg.png" alt="logo" width="25px" >Fitness+</h1>
+     
+            <p style="color: white; text-shadow: 0px 0px 2px black;">New Artist Spotlight workouts<br>with music by Dua Lipa.</p>
+            <a href="" style="text-shadow:0px 0px 5px black ;" >See what's new ></a>
+            <a href="">Try it free ></a>
+            <br>
+            
+        </div>
+    </div>
+
+    <div class="airpods-ipad">
+        <div class="airpods">
+            <h1 style="font-family: 'SF Pro Display', sans-serif; font-weight: 700; margin-top: 30px; margin-bottom: 10px;">
+                AirPods Pro</h1>
+            <p>Rebuilt form the sound up.</p>
+            <a href="">Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img class="apple-watch-pic" src="Capture-3.PNG" alt="airpods" width="100%">
+        </div>
+
+        <div class="ipad">
+            <h1 style="font-family: 'SF Pro Display', sans-serif; font-weight: 700;font-size: 35px;">
+                iPad</h1>
+     
+            <p>New Artist Spotlight workouts<br>with music by Beyonce.</p>
+            <a href="" >Learn more ></a>
+            <a href="">Buy ></a>
+            <br>
+            <img src="Capture-4.PNG" alt="ipad" width="100%">
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="first">
+            <b>Shop and Learn</b> <br>
+            <p>Store</p> 
+            <p>Mac</p> 
+            <p>iPad</p> 
+            <p>iPhone</p> 
+            <p>Watch</p> 
+            <p>AirPods</p>
+            <p>TV & Home</p> 
+            <p>AirTag</p> 
+            <p>Accessories</p> 
+            <p>Gift Cards </p>
+        </div>
+
+        <div class="second">
+            <b>Services</b> <br>
+            <p>Apple Music</p> 
+            <p>Apple TV+ </p>
+            <p>Apple Fitness+</p> 
+            <p>Apple News+ </p>
+            <p>Apple Arcade </p>
+            <p>iCloud </p>
+            <p>Apple One </p>
+            <p>Apple Card </p>
+            <p>Apple Books </p>
+            <p>Apple Podcasts</p> 
+            <p>App Store </p> <br>
+            <b>Account</b> <br>
+            <p>Manage Your Apple ID </p>
+            <p>Apple Store Account </p>
+            <p>iCloud.com </p>
+        </div>
+
+        <div class="third">
+        <b>Apple Store</b> <br>
+        <p>Find a Store </p>
+        <p>Genius Bar </p>
+        <p>Today at Apple </p>
+        <p>Apple Camp </p>
+        <p>Apple Store App </p>
+        <p>Refurbished and Clearance </p>
+        <p>Financing </p>
+        <p>Apple Trade In </p>
+        <p>Order Status </p>
+        <p>Shopping Help </p>
+        </div>
+
+        <div class="fourth">
+            <b>For Business</b> <br>
+            <p>Apple and Business </p>
+            <p>Shop for Business </p> <br>
+            <b>For Education</b>  <br>
+            <p>Apple and Education </p>
+            <p>Shop for K-12 </p>
+            <p>Shop for College </p> <br>
+            <b>For Healthcare</b> <br> 
+            <p>Apple in Healthcare </p>
+            <p>Health on Apple Watch </p>
+            <p>Health Records on iPhone </p>
+            <p>b>For Government</b>  <br>
+            <p>Shop for Government </p>
+            <p>Shop for Veterans and Military </p>
+        </div>
+    </div>
+</body>
+</html>
